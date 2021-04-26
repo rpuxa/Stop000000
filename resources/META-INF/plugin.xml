@@ -1,0 +1,28 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Stop000000</name>
+  <version>1.0</version>
+  <vendor email="rpuxa@yendex-team.ru">rpuxa</vendor>
+
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="193.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <applicationListeners>
+    <listener class="MyListener"
+              topic="com.intellij.openapi.project.ProjectManagerListener" />
+  </applicationListeners>
+
+</idea-plugin>
